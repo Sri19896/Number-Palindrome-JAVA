@@ -1,0 +1,23 @@
+public class NumberPalindrome {
+    public static boolean  isPalindrome ( int number){
+        int reverse =0;
+        int nnumber= number;
+        boolean x= false;
+        while (nnumber!=0){
+            int lastDigit = nnumber%10;
+             reverse = reverse * 10;
+             reverse= reverse+ lastDigit;
+             nnumber=nnumber/10;
+        } 
+        
+        if (number==reverse){
+                 x=true;
+            
+        }
+        else{
+            x=false;
+            
+        }
+        return x;
+    }
+}
